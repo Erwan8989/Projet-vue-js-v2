@@ -13,6 +13,8 @@
 </template>
 
 <script>
+
+// @Is a allias to src
 export default {
   name: 'home_vue',
   data: () => {
@@ -24,7 +26,7 @@ export default {
     }
   },
   computed: {
-    state_icon() {
+    state_icon () {
       // Retourne l’icone pour le FAB
       if (this.running) {
         return 'stop'
@@ -32,7 +34,7 @@ export default {
         return 'play_arrow'
       }
     },
-    state_class() {
+    state_class () {
       // Retourne la class pour le FAB
       if (this.running) {
         return 'red'
@@ -42,7 +44,7 @@ export default {
     }
   },
   methods: {
-    action() {
+    action () {
       // Gestion du start / stop
       this.start = new Date().getTime()
 
@@ -57,7 +59,7 @@ export default {
         this.saveHistory({time: this.time, m: this.m, ft: this.ft})
       }
     },
-    saveHistory(item) {
+    saveHistory (item) {
       // Sauvegarde dans l’historique
       let history = JSON.parse(localStorage.getItem('history'))
       if (!Array.isArray(history)) {
@@ -66,7 +68,7 @@ export default {
       history.unshift(item)
       localStorage.setItem('history', JSON.stringify(history))
     },
-    compute() {
+    compute () {
       let fallTime = new Date().getTime() - this.start
       let height = 16 * Math.pow((fallTime / 1000), 2)
       let numberDigits = 1
@@ -89,6 +91,6 @@ export default {
 }
 
 .home > h1, .home > h2, .home > h3 {
-  color: white;
+  color: black;
 }
 </style>
