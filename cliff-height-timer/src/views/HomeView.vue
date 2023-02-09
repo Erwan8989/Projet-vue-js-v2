@@ -1,14 +1,13 @@
 <template>
   <v-container fluid fill-height className="d-flex deep-purple lighten-1">
     <div className="home">
+      <v-btn v-on:click="action" v-bind:class="state_class" dark fixed bottom right fab>
+        <v-icon>{{ state_icon }}</v-icon>
+      </v-btn>
       <h1>{{ time }} s</h1>
       <h3>{{ m }} m</h3>
       <h3>{{ ft }} ft</h3>
     </div>
-
-    <v-btn v-on:click="action" v-bind:class="state_class" dark fixed bottom right fab>
-      <v-icon>{{ state_icon }}</v-icon>
-    </v-btn>
   </v-container>
 </template>
 
@@ -86,7 +85,7 @@ export default {
 
 <style scoped>
 .home {
-  margin: auto;
+  margin: 1em auto 0 auto;
   text-align: center;
 }
 
