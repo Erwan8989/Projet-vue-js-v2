@@ -93,4 +93,25 @@ export default {
 .home > h1, .home > h2, .home > h3 {
   color: black;
 }
+
+.play_arrow {
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-top : 10px solid transparent;
+  border-bottom : 10px solid transparent;
+  border-left : 15px solid green;
+}
+
+.stop {
+  background-color: red;
+}
+
+.red {
+  background-color: #e08b4e;
+}
+
+.green {
+  background-color: #92be64;
+}
 </style>
