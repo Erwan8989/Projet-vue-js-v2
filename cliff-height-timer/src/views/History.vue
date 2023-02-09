@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <div className="history">
+      <h1>Historique</h1>
       <span>{{histo}}</span>
     </div>
   </v-container>

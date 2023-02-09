@@ -1,22 +1,32 @@
 <template>
-  <form class="review-form" @submit.prevent="onSubmit">
-    <div>
-      <label for="name">Time : </label>
-      <input id="name" v-model="time">
+  <h1>Formulaire d'ajout manuel à l'historique</h1>
+  <v-form class="review-form" @submit.prevent="onSubmit">
+    <div class="bloc_div">
+      <v-text-field
+          v-model="time"
+          label="Time"
+          required
+      ></v-text-field>
     </div>
-    <div>
-
-      <label for="review">m : </label>
-      <textarea id="review" v-model="m"></textarea>
+    <div class="bloc_div">
+      <v-text-field
+          v-model="m"
+          label="m"
+          required
+      ></v-text-field>
     </div>
-    <div>
-
-      <label for="rating">ft : </label>
-      <textarea id="review" v-model="ft"></textarea>
+    <div class="bloc_div">
+      <v-text-field
+          v-model="ft"
+          label="ft"
+          required
+      ></v-text-field>
     </div>
-
-    <input class="button" type="submit" value="Envoyer">
-  </form>
+    <v-btn
+        color="success"
+        @click="onSubmit()"
+    >Ajouter</v-btn>
+  </v-form>
 </template>
 
 <script>
@@ -54,5 +64,8 @@ export default {
 </script>
 
 <style scoped>
-
+.bloc_div{
+  margin: auto;
+  width: 45em;
+}
 </style>

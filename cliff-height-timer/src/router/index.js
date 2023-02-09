@@ -28,7 +28,7 @@ const routes = [
   },
   {
     path: '/formulaire',
-    name: 'Convertisseur_vue',
+    name: 'Formulaire_vue',
     component: Formulaire_vue
   },
 ]
