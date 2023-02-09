@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <myToolbar />
-
     <v-main>
       <v-slide-y-transition mode="out-in">
         <router-view />
