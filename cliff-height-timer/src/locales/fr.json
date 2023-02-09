@@ -2,5 +2,6 @@
   "title": "Tuto Timer",
   "drawer.home" : "Home",
   "drawer.history" : "Historique",
-  "drawer.about" : "À propos"
+  "drawer.about" : "À propos",
+  "drawer.convertisseur" : "Convertisseur"
 }
