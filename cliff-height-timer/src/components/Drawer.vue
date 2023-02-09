@@ -23,8 +23,8 @@ export default {
     return {
       items: [
         { icon: 'home', text: this.$t('drawer.home'), action: '/' },
-        { icon: 'history', text: this.$t('drawer.history'), action: '/history' },
         { icon: 'form', text: this.$t('drawer.formulaire'), action: '/formulaire' },
+        { icon: 'history', text: this.$t('drawer.history'), action: '/history' },
         { icon: 'conv', text: this.$t('drawer.convertisseur'), action: '/convertisseur' },
         { icon: 'about', text: this.$t('drawer.about'), action: '/about' },
       ]
