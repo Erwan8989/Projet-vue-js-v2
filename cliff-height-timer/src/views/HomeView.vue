@@ -107,7 +107,7 @@ export default {
 }
 
 .red {
-  background-color: #e08b4e;
+  background-color: #ad4242;
 }
 
 .green {

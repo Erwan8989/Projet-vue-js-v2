@@ -6,9 +6,9 @@
         <v-btn color="error" @click="delete_histo">Vider l'historique</v-btn>
       </div>
       <div v-for="(item, index) in histo" :key="index">
-        <span>Time : {{ item.time }}</span>
-        <span>  M : {{ item.m }}</span>
-        <span>  Ft : {{ item.ft }}</span>
+        <span> {{ item.time }} <strong>S</strong></span>
+        <span> &lt;=> {{ item.m }} <strong> M</strong></span>
+        <span> &lt;=> {{ item.ft }} <strong> Ft</strong></span>
       </div>
     </div>
   </v-container>

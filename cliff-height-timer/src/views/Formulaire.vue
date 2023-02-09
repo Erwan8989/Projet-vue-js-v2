@@ -4,7 +4,7 @@
     <div class="bloc_div">
       <v-text-field
           v-model="time"
-          label="Time"
+          label="Seconds"
           required
           type="number"
       ></v-text-field>
@@ -12,7 +12,7 @@
     <div class="bloc_div">
       <v-text-field
           v-model="m"
-          label="m"
+          label="Meters"
           required
           type="number"
       ></v-text-field>
@@ -20,7 +20,7 @@
     <div class="bloc_div">
       <v-text-field
           v-model="ft"
-          label="ft"
+          label="Feets"
           required
           type="number"
       ></v-text-field>
