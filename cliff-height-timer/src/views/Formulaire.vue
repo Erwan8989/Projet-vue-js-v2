@@ -6,6 +6,7 @@
           v-model="time"
           label="Time"
           required
+          type="number"
       ></v-text-field>
     </div>
     <div class="bloc_div">
@@ -13,6 +14,7 @@
           v-model="m"
           label="m"
           required
+          type="number"
       ></v-text-field>
     </div>
     <div class="bloc_div">
@@ -20,12 +22,14 @@
           v-model="ft"
           label="ft"
           required
+          type="number"
       ></v-text-field>
     </div>
     <v-btn
         color="success"
         @click="onSubmit()"
-    >Ajouter</v-btn>
+    >Ajouter
+    </v-btn>
   </v-form>
 </template>
 
@@ -36,7 +40,7 @@ export default {
     return {
       time: '',
       m: '',
-      ft: null
+      ft: ''
     }
   },
   methods: {
@@ -48,7 +52,9 @@ export default {
       }
       this.$emit('review-submitted', productReview)
       this.saveHistory({time: this.time, m: this.m, ft: this.ft})
-
+      this.time = ""
+      this.m = ""
+      this.ft = ""
     },
     saveHistory(item) {
       // Sauvegarde dans l’historique
@@ -58,13 +64,14 @@ export default {
       }
       history.unshift(item)
       localStorage.setItem('history', JSON.stringify(history))
+
     }
   }
 }
 </script>
 
 <style scoped>
-.bloc_div{
+.bloc_div {
   margin: auto;
   width: 45em;
 }

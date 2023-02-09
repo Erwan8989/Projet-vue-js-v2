@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" clipped fixed app>
+    <v-navigation-drawer v-model="drawer" clipped fixed app image="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg">
       <myContentDrawer />
     </v-navigation-drawer>
     <v-app-bar dark color="deep-purple" clipped-left app>

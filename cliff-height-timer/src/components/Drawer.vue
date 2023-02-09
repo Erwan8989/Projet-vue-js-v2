@@ -1,6 +1,5 @@
 <template>
   <div>
-    <v-toolbar class="deep-purple" />
     <v-list dense>
       <template v-for="(item, i) in items" :key="i">
         <v-divider dark v-if="item.divider" ></v-divider>
@@ -25,9 +24,9 @@ export default {
       items: [
         { icon: 'home', text: this.$t('drawer.home'), action: '/' },
         { icon: 'history', text: this.$t('drawer.history'), action: '/history' },
-        { icon: 'help', text: this.$t('drawer.formulaire'), action: '/formulaire' },
-        { icon: 'help', text: this.$t('drawer.convertisseur'), action: '/convertisseur' },
-        { icon: 'help', text: this.$t('drawer.about'), action: '/about' },
+        { icon: 'form', text: this.$t('drawer.formulaire'), action: '/formulaire' },
+        { icon: 'conv', text: this.$t('drawer.convertisseur'), action: '/convertisseur' },
+        { icon: 'about', text: this.$t('drawer.about'), action: '/about' },
       ]
     }
   }
