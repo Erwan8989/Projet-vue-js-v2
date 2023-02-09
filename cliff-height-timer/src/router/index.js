@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import HistoryView from '../views/History.vue'
 import AboutView from '../views/About.vue'
 import ConvertisseurView from '../views/Convertisseur.vue'
+import Formulaire_vue from '../views/Formulaire.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/convertisseur',
     name: 'Convertisseur_vue',
     component: ConvertisseurView
+  },
+  {
+    path: '/formulaire',
+    name: 'Convertisseur_vue',
+    component: Formulaire_vue
   },
 ]
 

@@ -25,6 +25,7 @@ export default {
       items: [
         { icon: 'home', text: this.$t('drawer.home'), action: '/' },
         { icon: 'history', text: this.$t('drawer.history'), action: '/history' },
+        { icon: 'help', text: this.$t('drawer.formulaire'), action: '/formulaire' },
         { icon: 'help', text: this.$t('drawer.convertisseur'), action: '/convertisseur' },
         { icon: 'help', text: this.$t('drawer.about'), action: '/about' },
       ]

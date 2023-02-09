@@ -3,5 +3,6 @@
   "drawer.home" : "Home",
   "drawer.history" : "Historique",
   "drawer.about" : "À propos",
-  "drawer.convertisseur" : "Convertisseur"
+  "drawer.convertisseur" : "Convertisseur",
+  "drawer.formulaire" : "Formulaire"
 }
